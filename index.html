@@ -191,7 +191,12 @@ Sewer King | Seven Wonders of the Industrial World (2003) BBC One, Thursday 25th
 <title>Cholera Deaths per London District 1849</title>
 <script type="text/javascript" src=https://www.gstatic.com/charts/loader.js></script>
 
-<div id="chart_div"></div>
+<div id=”chart_div”></div>
+
+     <script type=”text/javascript”>
+google.charts.load(‘current’, { ‘packages’ : [‘corechart’] });
+google.charts.setOnLoadCallback(drawChart);
+          
      function drawChart() {
          var data = google.visualization.arrayToDataTable([
                 ['Task','Deaths from Cholera in 10,000 living'],
