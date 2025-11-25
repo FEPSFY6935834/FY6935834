@@ -251,6 +251,10 @@ Sewer King | Seven Wonders of the Industrial World (2003) BBC One, Thursday 25th
 </p>
 
 
+<p>Pie Chart test mk1:</p>
+
+     
+
 <html>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.0"></script>
 <body>
@@ -258,14 +262,24 @@ Sewer King | Seven Wonders of the Industrial World (2003) BBC One, Thursday 25th
 <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
 
 <script>
-const xValues = ["Lambeth", "Newington", "Camberwell", "Bermondsey", "Rotherhithe"];
-const yValues = [337, 200, 107, 210, 19];
+const xValues = ["Lambeth", "Newington", "Camberwell", "Bermondsey", "Rotherhithe", "Bethnal Green","St. George-in-the-East", "Poplar", "Stepney", "Whitechapel", "St. Marylebone", "St. Pancras"];
+const yValues = [337, 200, 107, 210, 19, 170, 123, 107, 225, 470, 224, 111];
 const barColors = [
   "#b91d47",
   "#00aba9",
   "#2b5797",
   "#e8c3b9",
-  "#1e7145"
+  "#1e7145",
+  "#B22222",
+  "#556B2F",
+  "#8B008B", 
+  "#FFD700",
+  "#FF00FF",
+  "#D2691E",
+  "#00FFFF",
+  "#B8860B"
+  
+  
 ];
 
 const ctx = document.getElementById('myChart');
@@ -284,7 +298,7 @@ new Chart(ctx, {
       legend: {display:true},
       title: {
         display: true,
-        text: "Deaths from Cholera in London districts 1849",
+        text: " Total Cholera deaths in London districts 1849",
         font: {size:16}
       }
     }
