@@ -315,6 +315,31 @@ Sewer King | Seven Wonders of the Industrial World (2003) BBC One, Thursday 25th
 
 
 
+     
+<html>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<body>
+
+<div id="myPlot" style="width:100%;max-width:700px"></div>
+
+<script>
+const xArray = ["Lambeth", "Newington", "Camberwell", "Bermondsey", "Rotherhithe", "Bethnal Green","St. George-in-the-East", "Poplar", "Stepney", "Whitechapel", "St. Marylebone", "St. Pancras"];
+const yArray = [337, 200, 107, 210, 19, 170, 123, 107, 225, 470, 224, 111];
+
+const layout = {title:"World Wide Wine Production"};
+
+const data = [{labels:xArray, values:yArray, type:"pie"}];
+
+Plotly.newPlot("myPlot", data, layout);
+</script>
+
+</body>
+</html>
+
+
+
+
+
 
 
 
