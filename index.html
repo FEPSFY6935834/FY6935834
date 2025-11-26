@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html>
+
+
+  <html>
 
      <head>
      
@@ -74,11 +76,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <body style="background-color:#FFFFFF;margin-left:50px;">
-<h3 id="Abstract">Abstract</h3>
 
-     
+
+
+<h3 id="Abstract">Abstract</h3>   
 <p class="ex1">
-<pre>
 In July 1858, London was at boiling point. The smells of untreated waste engulfed the streets. Parliament was halted. Thousands were dying. What could be done? 
      
 In 1832, there had been an enormous breakout of cholera throughout England. Almost 15,000 people were
@@ -89,7 +91,6 @@ down almost nothing was done to help it be prevented again in the future. Theref
 wave hit the even more crowded and unsanitary country in 1848, there were 60,000 deaths within another
 2-year span . People began to spread rumours and ask questions as to how this disease could be
 affecting so many people and with such aggression. 
-</pre>
 </p>
 
 <!-- Pie chart for Cholera deaths in London Disctricts in 1849 -->
@@ -98,7 +99,7 @@ affecting so many people and with such aggression.
        
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.0"></script>
 
-<canvas id="myChart" style="width:10%;max-width:100px"></canvas>
+<canvas id="myChart" style="width:300px; max-width:400px; margin:0 auto; display:block;"></canvas>
 
 <script>
 const xValues = ["Lambeth", "Newington", "Camberwell", "Bermondsey", "Rotherhithe", "Bethnal Green","St. George-in-the-East", "Poplar", "Stepney", "Whitechapel", "St. Marylebone", "St. Pancras"];
@@ -131,12 +132,24 @@ new Chart(ctx, {
     }]
   },
   options: {
+    layout: {
+      padding: {
+        top: 0,
+        bottom: 0,
+        left: 0,
+        right: 0
+      }
+    },
     plugins: {
-      legend: {display:true},
+      legend: {
+        labels: {
+          padding: 5    // spacing between legend and chart
+        }
+      },
       title: {
         display: true,
-        text: " Total Cholera deaths in London districts surveyed by John Snow 1849",
-        font: {size:16}
+        text: "Total Cholera deaths in London districts surveyed by John Snow 1849",
+        padding: { top: 0, bottom: 0 } // spacing between title and chart
       }
     }
   }
@@ -375,5 +388,8 @@ Sewer King | Seven Wonders of the Industrial World (2003) BBC One, Thursday 25th
 
 </body>   
 </html>
+
+  
+
 
   
